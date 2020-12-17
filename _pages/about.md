@@ -16,7 +16,7 @@ comments: true
 
 <div class="sticky-top sticky-top-80">
 <h5>Buy me a Beer</h5>
-
+<img src="{{site.baseurl}}/assets/images/beer.png">
 <p>Hard work deserves a beer. Thanks!</p>
 
 <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-warning">Buy me a Beer</a>
