@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'Remote Ryan'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 
@@ -27,8 +27,8 @@ authors:
     avatar: 'assets/images/avatar1_300p.png'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: zarestaurantwifi@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
+    web: https://zarestaurantwifi.github.io/
+    twitter: https://zarestaurantwifi.github.io/
     description: "I am Remote Ryan."
 
 # Plugins
