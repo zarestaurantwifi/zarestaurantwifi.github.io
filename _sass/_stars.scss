@@ -143,63 +143,16 @@ $rating-icons-paths: (
   }
 }
 
-
-.meter {
-  display: inline-block;
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  background-color: $meter-bg-color;
+.numberCircle {
   border-radius: 50%;
-  //	border: 4px solid black;
-  margin: 0 0.5rem;
-  @include shadow(2, true);
+  width: 36px;
+  height: 36px;
+  padding: 8px;
 
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100% + $ring-size * 2;
-    left: -$ring-size;
-    top: -$ring-size;
-    bottom: -$ring-size;
-    border-radius: 50%;
-    background: $ring-color;
-    z-index: -1;
-    @include shadow(3);
-  }
-}
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  text-align: center;
 
-// Gear-meter
-
-.meter--gear {
-  width: 5rem;
-  height: 5rem;
-  margin: 0;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  @include shadow(2, true);
-
-  &:before {
-    width: 100% + $ring-size * 4 * 2;
-    height: 100% + $ring-size * 4 * 2;
-    left: -$ring-size * 4;
-    top: -$ring-size * 4;
-    bottom: -$ring-size * 4;
-  }
-
-  div {
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 5rem;
-    font-family: 'Roboto Mono', monospace;
-    font-style: italic;
-    font-weight: bold;
-    color: $grad-color;
-
-    &.redzone {
-      color: $needle-color;
-    }
-  }
-
+  font: 32px Arial, sans-serif;
 }
