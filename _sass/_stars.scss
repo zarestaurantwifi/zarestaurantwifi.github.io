@@ -1,3 +1,10 @@
+
+$meter-bg-color: white;
+
+$ring-size: 3.5%;
+$ring-color: #333;
+
+
 /// Credits to https://codepen.io/damianmuti/pen/KmEMdR
 
 ///
@@ -134,4 +141,65 @@ $rating-icons-paths: (
   &--big {
     font-size: 150%;
   }
+}
+
+
+.meter {
+  display: inline-block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  background-color: $meter-bg-color;
+  border-radius: 50%;
+  //	border: 4px solid black;
+  margin: 0 0.5rem;
+  @include shadow(2, true);
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100% + $ring-size * 2;
+    left: -$ring-size;
+    top: -$ring-size;
+    bottom: -$ring-size;
+    border-radius: 50%;
+    background: $ring-color;
+    z-index: -1;
+    @include shadow(3);
+  }
+}
+
+// Gear-meter
+
+.meter--gear {
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  @include shadow(2, true);
+
+  &:before {
+    width: 100% + $ring-size * 4 * 2;
+    height: 100% + $ring-size * 4 * 2;
+    left: -$ring-size * 4;
+    top: -$ring-size * 4;
+    bottom: -$ring-size * 4;
+  }
+
+  div {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-weight: bold;
+    color: $grad-color;
+
+    &.redzone {
+      color: $needle-color;
+    }
+  }
+
 }
